@@ -50,8 +50,10 @@
             <label><strong>Phone Number:</strong></label> {{ currentContact.phoneNumber }}
           </div>        
         <div>
-          <label><strong>Status:</strong></label>
-          {{ currentContact.status ? "Active" : "InActive" }}
+        
+          <label *ngIf="currentContact.status" style="color: forestgreen;"><strong>Active</strong></label>
+          <label *ngIf="!currentContact.status" style="color:red;"><strong>In Active</strong></label>
+          <!-- {{ currentContact.status ? "Active" : "InActive" }} -->
         </div>
   
         <a class="badge badge-warning" routerLink="/contacts/{{ currentContact.id }}">

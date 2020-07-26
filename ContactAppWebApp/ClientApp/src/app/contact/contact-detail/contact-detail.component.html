@@ -42,20 +42,10 @@
               [(ngModel)]="currentContact.phoneNumber"
               name="phoneNumber"
             />
-          </div>
-          <!-- <div class="form-group">
-            <label for="status">status</label>
-            <input
-              type="text"
-              class="form-control"
-              id="status"
-              [(ngModel)]="currentContact.status"
-              name="status"
-            />
-          </div> -->
-        <div class="form-group">
-          <label><strong>Status:</strong></label>
-          {{ currentContact.status ? "Active" : "InActive" }}
+          </div>       
+        <div class="form-group">       
+          <label *ngIf="currentContact.status" style="color: forestgreen;"><strong>Active</strong></label>
+          <label *ngIf="!currentContact.status" style="color:red;"><strong>In Active</strong></label>
         </div>
       </form>
   
