@@ -61,7 +61,7 @@ namespace ContactWebApi.Controllers
         public async Task<IEnumerable<Contact>> GetAll()
         {
             var result = await _contactService.GetAllAsync();
-            return result;
+            return result.OrderBy(c=>c.FirstName);
         }
 
         /// <summary>
