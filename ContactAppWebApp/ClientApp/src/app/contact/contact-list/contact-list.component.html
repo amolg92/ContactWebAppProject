@@ -21,12 +21,18 @@
     <div class="col-md-6">
       <h4>Contacts List</h4>
       <ul class="list-group">
-        <li
+        <li [ngClass]="{'disable' : !Contact.status}"
           class="list-group-item"
           *ngFor="let Contact of contacts; let i = index"
           [class.active]="i == currentIndex"
           (click)="setActiveContact(Contact, i)">
-          {{ Contact.firstName }}  {{ Contact.lastName }} 
+          <div class="row">
+            <div class="col-md-10">
+              {{ Contact.firstName }}  {{ Contact.lastName }} 
+            </div>
+            <div class="col-md-02"><span [ngClass]="!Contact.status? 'inActive' : 'Active'"></span></div>
+          </div>
+         
         </li>
       </ul>
   
@@ -52,7 +58,7 @@
         <div>
         
           <label *ngIf="currentContact.status" style="color: forestgreen;"><strong>Active</strong></label>
-          <label *ngIf="!currentContact.status" style="color:red;"><strong>In Active</strong></label>
+          <label *ngIf="!currentContact.status" style="color:gray;"><strong>In Active</strong></label>
           <!-- {{ currentContact.status ? "Active" : "InActive" }} -->
         </div>
   
