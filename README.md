@@ -13,16 +13,19 @@ Developer must have basic knowlege of following
 2) .Net Core (V3.1)
 3) EF core
 4) Depedency Injection
-3) SQL Database
+5) SQL Database
+6) Auto Mapper
+7) Mock
+8) XUnit
 
 # Project Strcuture
 
 * Angular Application
 * Web API
 * Service Layer
-* Repository Layer
-* Entity Layer
-* Unit Test
+* Repository Layer (EF Core)
+* Entity Layer 
+* Unit Test (xUnit)
 
 # How to run application
 
