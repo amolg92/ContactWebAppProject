@@ -42,6 +42,10 @@ Developer must have basic knowlege of following
    * npm install
 8) Run Application using ng serve -o
 
+## Diagram
+
+https://github.com/amolg92/ContactWebAppProject/blob/master/ArchiDiagram.PNG
+
 ## Note
 
 When run application make sure both Angular and Web API is running
