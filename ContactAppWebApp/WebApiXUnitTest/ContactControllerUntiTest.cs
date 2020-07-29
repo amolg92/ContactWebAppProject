@@ -2,6 +2,7 @@ using AutoMapper;
 using ContactWebApi.Controllers;
 using ContactWebApi.ViewModel;
 using Entity.Models;
+using Microsoft.Extensions.DependencyInjection;
 using Moq;
 using Repository;
 using Services;
@@ -26,6 +27,15 @@ namespace WebApiXUnitTest
             IContactService service = new ContactService(mockRepo.Object);
             var mapper = new Mock<IMapper>();
             _contactController = new ContactController(mapper.Object, service);
+
+
+            // Resolve DP injection for service classes
+            //var sev = new ServiceCollection()
+            //    .AddLogging().BuildServiceProvider();
+            //var factory = sev.GetService<IContactService>();
+            //var contactService = factory.GetAsync(1);
+            //_contactController = new ContactController(mapper.Object, service);
+
         }
 
         #endregion

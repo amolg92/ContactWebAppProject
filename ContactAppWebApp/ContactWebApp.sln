@@ -32,7 +32,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repository", "Repository\Re
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services", "Services\Services.csproj", "{2C863237-6D2A-4EC6-BB07-3F6D80B54072}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiXUnitTest", "WebApiXUnitTest\WebApiXUnitTest.csproj", "{F53DF723-F8B7-4B9F-A5ED-14D9C288C78C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApiXUnitTest", "WebApiXUnitTest\WebApiXUnitTest.csproj", "{F53DF723-F8B7-4B9F-A5ED-14D9C288C78C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiMSTest", "WebApiMSTest\WebApiMSTest.csproj", "{EAFAC526-379F-4D8E-9691-F516128B69C4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{F53DF723-F8B7-4B9F-A5ED-14D9C288C78C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F53DF723-F8B7-4B9F-A5ED-14D9C288C78C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F53DF723-F8B7-4B9F-A5ED-14D9C288C78C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAFAC526-379F-4D8E-9691-F516128B69C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAFAC526-379F-4D8E-9691-F516128B69C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAFAC526-379F-4D8E-9691-F516128B69C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAFAC526-379F-4D8E-9691-F516128B69C4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
